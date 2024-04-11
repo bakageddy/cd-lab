@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
 		Token* tok = next_token(lexer);
 		print_token(tok);
 		free(tok);
-	} while (peek(lexer) != EOF);
+	} while (lexer -> cursor < lexer -> len);
 	puts("");
 
 	free(lexer);
