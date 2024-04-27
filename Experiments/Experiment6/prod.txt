@@ -1,0 +1,4 @@
+S -> AB
+S -> BAB
+A -> a
+B -> x
