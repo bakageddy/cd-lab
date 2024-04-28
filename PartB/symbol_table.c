@@ -10,7 +10,12 @@ typedef enum {
 	DOUBLE,
 } Type;
 
-const static char* types[] = {"char", "int", "float", "double"};
+const static char* types[] = {
+	[CHAR]		= "char", 
+	[INT]		= "int", 
+	[FLOAT]		= "float", 
+	[DOUBLE]	= "double"
+};
 
 typedef struct {
 	Type type;
